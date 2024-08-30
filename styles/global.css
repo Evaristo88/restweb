@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --green: #27ae60;
+  --orange: #FB6800;
+  --black: #192a56;
+  --light-color: #666;
+  --white: #fff;
+  --red: #f00;
+  --box-sahdow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* text-decoration: none;
+  outline: none;
+  border: none; */
+  /* transition: all 0.2s linear; */
+}
+body {
+  /* overflow-x: hidden; */
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+  background: #eee;
+}
+
+.sub-heading {
+  text-align: center;
+  color: var(--green);
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+}
+
+.btn:hover {
+  background: var(--green);
+  letter-spacing: 0.1rem;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 450px) {
+  html {
+    /* font-size: 50%; */
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    /* font-size: 55%; */
+  }
+  section {
+    padding: 2rem;
+  }
+}

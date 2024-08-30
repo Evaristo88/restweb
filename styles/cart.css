@@ -1,0 +1,107 @@
+.cart {
+  margin-top: 4rem;
+}
+
+.cart .btn-outline {
+  color: var(--red);
+}
+
+.cart .cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cart .cart-list .cart-item {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* background: #fff; */
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-sahdow);
+  position: relative;
+  overflow: auto;
+  text-align: center;
+}
+
+.cart .cart-list .cart-item .btn-outline {
+}
+
+.cart .cart-list .cart-item img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.cart .cart-list .cart-item .cart-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cart .cart-list .cart-item .cart-details h3 {
+  color: var(--black);
+}
+
+.cart .cart-list .cart-item .cart-details .price {
+  color: var(--green);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.cart .cart-list .cart-item .quantity-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: lightsalmon;
+}
+.cart .cart-list .cart-item .quantity-btns .quantity {
+    color: var(--white);
+}
+
+.cart .cart-list .cart-item .quantity-btns .btn-outline {
+  font-size: large;
+  background-color: transparent;
+  padding: 0.2rem 0.3rem;
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+}
+.cart .cart-list .cart-item .quantity-btns .btn-outline:hover {
+  color: var(--white);
+  background-color: transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.cart .total-cost {
+    text-align: right;
+}
+.cart .total-cost span {
+    color: orange;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 450px) {
+  .cart .cart-list .cart-item img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .cart .cart-list .cart-item img {
+    height: 5rem;
+    width: 5rem;
+  }
+}

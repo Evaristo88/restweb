@@ -1,0 +1,88 @@
+.customers {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+}
+.customers .recentOrders {
+  position: relative;
+  display: grid;
+  min-height: fit-content;
+  background: #fff;
+  padding: 20px;
+  overflow-x: scroll;
+}
+.customers .recentOrders .cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.customers .cardHeader h2 {
+  font-weight: 600;
+}
+.customers .recentOrders .btncustomers {
+  position: relative;
+  padding: 5px 10px;
+  background: #03a9fa;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.customers table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.customers table thead td {
+  font-weight: 600;
+}
+.customers .recentOrders table tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.customers .recentOrders table tbody tr:last-child {
+  border-bottom: none;
+}
+.customers .recentOrders table tr:hover {
+  background: #03a9fa;
+  color: #fff;
+}
+.customers .recentOrders table tr td {
+  padding: 9px 5px;
+}
+.customers .recentOrders table tbody tr td:last-child,
+.customers .recentOrders table thead tr td:last-child {
+  text-align: right;
+}
+.customers .recentOrders table tbody tr td:nth-child(2),
+.customers .recentOrders table thead tr td:nth-child(2) {
+  text-align: right;
+  padding-right: 20px;
+}
+.customers .recentOrders table tbody tr td:nth-child(3),
+.customers .recentOrders table thead tr td:nth-child(3) {
+  text-align: center;
+}
+.status {
+  position: relative;
+  padding: 2px 4px;
+  background: #f00;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.delivered {
+  background: #8de02c;
+}
+.pending {
+  background: #f9ca3f;
+}
+.return {
+  background: #f00;
+}
+.in-progress {
+  background: #1795ce;
+}

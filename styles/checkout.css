@@ -1,0 +1,28 @@
+.checkout {
+  margin-top: 4rem;
+}
+
+.checkout .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.checkout .row .content {
+  flex: 1 1 45rem;
+}
+
+.checkout .row .content h3 {
+  color: var(--black);
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.checkout .row .content p {
+  color: var(--light-color);
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  line-height: 2;
+}

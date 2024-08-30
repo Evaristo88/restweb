@@ -1,0 +1,27 @@
+.menu {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+}
+.menu .add-product {
+  position: relative;
+  display: grid;
+  min-height: fit-content;
+  background: #fff;
+  padding: 20px;
+}
+.menu .add-product .cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.menu .cardHeader h2 {
+  font-weight: 600;
+}
+
+.menu textarea {
+  resize: none;
+}

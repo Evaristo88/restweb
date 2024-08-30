@@ -1,0 +1,104 @@
+.my-orders {
+    margin-top: 4rem;
+  }
+  
+  .my-orders .my-orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .my-orders .my-orders-list .my-orders-item {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: #fff; */
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-sahdow);
+    position: relative;
+    overflow: auto;
+    text-align: center;
+  }
+  
+  .my-orders .my-orders-list .my-orders-item .btn-outline {
+  }
+  
+  .my-orders .my-orders-list .my-orders-item img {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.5rem;
+  }
+  
+  .my-orders .my-orders-list .my-orders-item .my-orders-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .my-orders .my-orders-list .my-orders-item .my-orders-details h3 {
+    color: var(--black);
+  }
+  
+  .my-orders .my-orders-list .my-orders-item .my-orders-details .price {
+    color: var(--green);
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  .my-orders .my-orders-list .my-orders-item .quantity-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: lightsalmon;
+  }
+  .my-orders .my-orders-list .my-orders-item .quantity-btns .quantity {
+      color: var(--white);
+  }
+  
+  .my-orders .my-orders-list .my-orders-item .quantity-btns .btn-outline {
+    font-size: large;
+    background-color: transparent;
+    padding: 0.2rem 0.3rem;
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+  }
+  .my-orders .my-orders-list .my-orders-item .quantity-btns .btn-outline:hover {
+    color: var(--white);
+    background-color: transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  .my-orders .total-cost {
+      text-align: right;
+  }
+  .my-orders .total-cost span {
+      color: orange;
+  }
+  
+  /* MEDIA QUERIES */
+  @media (min-width: 450px) {
+    .my-orders .my-orders-list .my-orders-item img {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+  
+  @media (min-width: 991px) {
+    .my-orders .my-orders-list .my-orders-item img {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+  
